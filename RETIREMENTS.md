@@ -47,3 +47,9 @@
 - **Archived**: Marked read-only on GitHub; local copy deleted or cleaned
 - **Deleted**: Removed from GitHub and local machine entirely
 - **Retained**: Kept active for operational use
+
+## Cost Tracking Infrastructure
+
+### greenmark-cost-ledger (NEW 2026-08-25)
+- **Purpose**: Ledger for service costs, decommissioned service verification, incident tracking
+- **Critical TODO**: Verify v2/v3/v4/v4-test are NOT deployed on Railway (check dashboard manually)
