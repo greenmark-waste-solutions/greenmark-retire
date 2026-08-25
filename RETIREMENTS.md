@@ -53,3 +53,41 @@
 ### greenmark-cost-ledger (NEW 2026-08-25)
 - **Purpose**: Ledger for service costs, decommissioned service verification, incident tracking
 - **Critical TODO**: Verify v2/v3/v4/v4-test are NOT deployed on Railway (check dashboard manually)
+
+---
+
+## RETIREMENT AUDIT COMPLETE — 2026-08-25
+
+### Summary
+
+| Category | Count | Status | Action |
+|----------|-------|--------|--------|
+| **Deleted (local)** | 3 | Complete | greenmark-boxes, -boxes-ex, greenmark-go-door |
+| **Archived (remote)** | 11 | Complete | cerebro-warp-speed-excel-v2/v3, data-daemon-v2/v3/v4/v4-test, spikes/tests |
+| **Cleaned (local stash)** | 2 | Complete | greenmark-codex, greenmark-cockpit |
+| **Cost ledger created** | 1 | Complete | greenmark-cost-ledger (verification checklist TBD) |
+| **Retirement prims** | 1 | Complete | Manifest + repo-prims reference (bundles on-demand) |
+
+### Verified Clean
+- No orphaned Supabase projects
+- No lingering worktrees
+- v5 is the active data-daemon (v2/v3/v4 are disabled/archived)
+- All archived repos properly marked read-only on GitHub
+
+### Next Actions (Manual)
+1. [ ] Check Railway dashboard to confirm old data-daemon services aren't deployed
+2. [ ] Quantify cost savings from v4→v5 cutover
+3. [ ] Create repo prim bundles (on-demand, as needed)
+4. [ ] Delete local clones of 11 archived repos (requires user permission)
+
+### Files Created
+- `greenmark-retire` — Audit ledger + retirement docs
+- `greenmark-cost-ledger` — Service cost tracking + decommission verification
+- `retirement-prims/MANIFEST.md` — Archive references
+- `retirement-prims/REPO-PRIMS.md` — Active repo preservation strategy
+
+---
+
+**Audit completed by**: Claude Code  
+**Date**: 2026-08-25  
+**Next review**: 2026-09-25 (monthly)
